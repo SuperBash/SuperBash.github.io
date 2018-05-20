@@ -4,8 +4,8 @@
 	<xsl:output method="html"/>
 	<html>
 		<body>
-		
-			<h1><xsl:value-of select="cursos/item/title"/></h1>
+		<xsl:for-each select="cursos/item"
+			<h1><xsl:value-of select="title"/></h1>
 			<xsl:apply-templates/>
 		
 		</body>
