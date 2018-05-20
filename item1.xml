@@ -6,6 +6,7 @@
 		<body>
 		
 			<h1><xsl:value-of select="cursos/item/title"/></h1>
+			<xsl:apply-templates/>
 		
 		</body>
 	</html>
